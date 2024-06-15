@@ -10,4 +10,9 @@ class Greeting(Resource):
         return "Clever Cloud is Up & Running!"
 
 api.add_resource(Greeting, '/')
-app.run(host="0.0.0.0", port=os.environ.get("PORT", 8080))
+
+if __name__ == '__main__':
+    # Use os.environ.get("PORT", 8080) to get the port number from environment variable
+    port = int(os.environ.get("PORT", 8080))
+    # Use host="0.0.0.0" to listen on all network interfaces
+    app.run(host="0.0.0.0", port=port)
