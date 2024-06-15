@@ -16,7 +16,7 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 720))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 9999))
 
 # Chat id of a group for logging bot's activities
 LOGGER_ID = int(getenv("LOGGER_ID", None))
@@ -32,10 +32,10 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/AKex9210/AnonXMusic/",
+    "https://github.com/AKex9210/anonmusicbeta/",
 )
 
-REPO_URL = "https://github.com/VARC9210/MUSIC"
+REPO_URL = "https://github.com/VARC9210/MUSICCBETA"
 
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
@@ -81,13 +81,13 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/eb1e2b58e17964083db73.jpg"
+    "START_IMG_URL", "https://graph.org/file/f4f969692d918007d9a0a.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://graph.org/file/ac0a494e1345f1d7d64dc.jpg"
+    "PING_IMG_URL", "https://graph.org/file/8b96ac177332bb299014d.jpg"
 )
 PLAYLIST_IMG_URL = "https://graph.org/file/3a9bb22148d884d7d8a99.jpg"
-STATS_IMG_URL = "https://graph.org/file/9ead8bad504f22e3490f7.jpg"
+STATS_IMG_URL = "https://graph.org/file/24de82414e9a1f8d35aa9.jpg"
 TELEGRAM_AUDIO_URL = "https://graph.org/file/ebc1cd4853f51d4fd7cdb.jpg"
 TELEGRAM_VIDEO_URL = "https://graph.org/file/948c175c8bfb3d96080ad.jpg"
 STREAM_IMG_URL = "https://graph.org/file/e8311d4fff8527c550185.jpg"
